@@ -50,8 +50,7 @@ namespace LabTwo
         {
             Console.Write(message);
             string input = Console.ReadLine();
-            int number;
-            bool success = int.TryParse(input, out number);
+            bool success = int.TryParse(input, out int number);
             if (!success || number < 1 || number > 100)
             {
                 Console.Write("Invalid entry. ");
